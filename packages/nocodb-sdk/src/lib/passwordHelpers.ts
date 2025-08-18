@@ -4,12 +4,12 @@ export function validatePassword(p) {
   let valid = true;
 
   if (!p) {
-    error = 'At least 8 letters';
+    error = 'At least 10 letters';
     // error = t('msg.error.signUpRules.completeRuleSet');
     valid = false;
   } else {
-    if (!(p.length >= 8)) {
-      error += 'At least 8 letters. ';
+    if (!(p.length >= 10)) {
+      error += 'At least 10 letters. ';
       // error += t('msg.error.signUpRules.atLeast8Char');
       valid = false;
     }
